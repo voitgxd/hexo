@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: voitgxd's blog
+title: VOIT'S BLOG
 subtitle:
 description:
 author: voitgxd
@@ -11,7 +11,8 @@ language: zh-Hans
 timezone:
 
 avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
-description: '念念不忘，必有所响'
+#avatar: https://7xnq6l.com1.z0.glb.clouddn.com/04213452103587.jpg
+description: '雁过留痕，叶落遗声'
 duoshuo_shortname: voitgxd
 since: 2013
 # Social links
@@ -30,6 +31,9 @@ swiftype_key: MKqdF8sLs6pS-wRyWk9s
 
 # 多说分享服务
 duoshuo_share: true
+
+# 多说热评文章 true 或者 false
+duoshuo_hotartical: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
