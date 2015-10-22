@@ -7,7 +7,6 @@
   </span>
   <span class="author">{{ config.author }}</span>
 </div>
-
 <div class="powered-by">
   {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
 </div>
