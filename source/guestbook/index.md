@@ -2,7 +2,7 @@ title: 留言
 date: 2015-10-21 16:08:37
 type: guestbook
 ---
-<div style="text-align:center;">念念不忘，终有回响</div>
+<blockquote class="blockquote-center">念念不忘，终有回响</blockquote>
 <br/>
 >最近访客
 

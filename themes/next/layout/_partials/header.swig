@@ -1,39 +1,66 @@
-<h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="{{ config.root }}" class="brand">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
+<div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
+  {% if theme.custom_logo.image and not theme.scheme %}
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
+             alt="{{ config.title }}"/>
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="custom-logo-site-title">
+    <a href="{{ config.root }}"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
       <span class="site-title">{{ config.title }}</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
-
-{% if theme.menu %}
-  <ul id="menu" class="menu menu-left">
-    {% for name, path in theme.menu %}
-      {% set itemName = name.toLowerCase() %}
-      <li class="menu-item menu-item-{{ itemName }}">
-        <a href="{{ url_for(path) }}">
-          <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
-          {{ __('menu.' + itemName) }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
-<div class="site-search">
-	<form class="site-search-form">
-		<input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-	</form>
-	<script type="text/javascript">
-	  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-		(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-		e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-	  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-	  _st('install', '{{ config.swiftype_key }}','2.0.0');
-	</script>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">{{ config.subtitle }}</p>
 </div>
 
- 
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  {% set hasSearch = theme.swiftype_key || theme.tinysou_Key %}
+
+  {% if theme.menu %}
+    <ul id="menu" class="menu {{ hasSearch and 'menu-left' }}">
+      {% for name, path in theme.menu %}
+        {% set itemName = name.toLowerCase() %}
+        <li class="menu-item menu-item-{{ itemName }}">
+          <a href="{{ url_for(path) }}" rel="section">
+            {% if theme.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-{{theme.menu_icons[itemName] || 'question-circle'}}"></i> <br />
+            {% endif %}
+            {{ __('menu.' + itemName) }}
+          </a>
+        </li>
+      {% endfor %}
+
+      {# Search icon for default scheme #}
+      {% if not theme.scheme and theme.swiftype_key %}
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            {% if theme.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-search icon-next-search"></i> <br />
+            {% endif %}
+            {{ __('menu.search') }}
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+
+  {% if hasSearch %}
+    <div class="site-search">
+      {% include 'search.swig' %}
+    </div>
+  {% endif %}
+</nav>
+

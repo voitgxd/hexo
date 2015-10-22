@@ -28,6 +28,9 @@ links:
 # search
 swiftype_key: MKqdF8sLs6pS-wRyWk9s
 
+# 多说分享服务
+duoshuo_share: true
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
