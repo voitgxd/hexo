@@ -10,8 +10,7 @@ author: voitgxd
 language: zh-Hans
 timezone:
 
-avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
-#avatar: https://7xnq6l.com1.z0.glb.clouddn.com/04213452103587.jpg
+avatar: http://7xnq6l.com1.z0.glb.clouddn.com/voitgxd.jpg
 description: '雁过留痕，叶落遗声'
 duoshuo_shortname: voitgxd
 since: 2013
@@ -23,8 +22,8 @@ social:
 # title, chinese available
 links_title: Links
 # links
-links:
-  MacTalk: http://macshuo.com/
+#links:
+  #MacTalk: http://macshuo.com/
 
 # search
 swiftype_key: MKqdF8sLs6pS-wRyWk9s
@@ -94,5 +93,5 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:	
   type: git
-  repository: https://github.com/voitgxd/voitgxd.github.com.git
+  repository: git@github.com:voitgxd/voitgxd.github.com.git
   branch: master
