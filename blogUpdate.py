@@ -11,6 +11,7 @@ if __name__ == "__main__":
 	inputC = input('add to git? y/n : ')
 	if inputC == "y":
 		#3.ssh连接git并提交
+		os.system("hexo generate & (hexo deploy)")
 		#os.system("ssh -T git@github.com")
 		#time.sleep(2)
 		os.system("git add .")
