@@ -8,7 +8,7 @@ import subprocess
 if __name__ == "__main__":
 	inputC = input('commit to git? y/n : ')
 	if inputC == "y":
-		os.system("hexo generate & (hexo deploy)")
+		os.system("hexo clean & (hexo generate) & (hexo deploy)")
 		inputCo = input('backup source to git? y/n : ')
 		if inputCo == "y":
 			os.system("git add .")
