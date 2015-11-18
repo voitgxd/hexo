@@ -33,7 +33,7 @@ swiftype_key: MKqdF8sLs6pS-wRyWk9s
 duoshuo_share: true
 
 # 多说热评文章 true 或者 false
-duoshuo_hotartical: true
+#duoshuo_hotartical: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -92,5 +92,7 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy:	
+  type: git
+  repository: https://github.com/voitgxd/voitgxd.github.com.git
+  branch: master
