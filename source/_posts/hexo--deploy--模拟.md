@@ -5,13 +5,15 @@ categories: Hexo
 ---
 ![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/165105-485d32f74f22219e.jpg)
 
-### 前言
-
 自从Hexo部署起来之后就一直没有碰过了，因为不知道它还有个deploy模块，每次更新先使用markdown写一个md文件，然后在hexo目录下命令行编译，生成静态文件，接着把所有静态文件拷贝到git仓库下，最后一堆git命令才能把你blog更新一下，甚至有时仅仅是为了更新了一篇文章。
 
 <!--more-->
 
-因此就有了这个py脚本。默默的用python把deploy的过程实现了一遍，满满的都是泪...
+### 前言
+
+基于上述情况，为了使这个流程自动化，就有了这个py脚本。默默的用python把deploy的过程实现了一遍，满满的都是泪...
+
+学而不精之无知真可怕！！！
 
 ### 目的
 
