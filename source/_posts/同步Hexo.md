@@ -34,13 +34,15 @@ git remote add origin git@github.com:voitgxd/hexo.git
 git pull origin master
 ```
 
-3.在工作目录安装Hexo
+3.在工作目录安装Hexo,Hexo3.0以后server和deploy都得单独安装
 
 ```
 npm install hexo --save
+npm install hexo-deployer-git --save
+npm install hexo-server --save
 ```
 
-4.写好md执行工作目录python提交(发布到Git并备份工作区)
+4.写好md之后在工作目录用Git Bash执行python脚本提交(发布到Git并备份工作区)
 
 ```
 python blogUpdate.py
