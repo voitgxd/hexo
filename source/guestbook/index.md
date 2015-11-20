@@ -2,6 +2,7 @@ title: 留言
 date: 2015-10-21 16:08:37
 type: guestbook
 ---
+<blockquote class="blockquote-center">勿忘初心，终得始终</blockquote>
 <blockquote class="blockquote-center">念念不忘，终有回响</blockquote>
 <br/>
 >最近访客
