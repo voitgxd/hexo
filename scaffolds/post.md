@@ -1,8 +1,4 @@
 title: {{ title }}
 date: {{ date }}
-tags: 
-categories: 
-description:
+tags:
 ---
-
-<!--more-->
