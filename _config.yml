@@ -34,6 +34,9 @@ duoshuo_share: true
 # 多说热评文章 true 或者 false
 #duoshuo_hotartical: true
 
+# baidu
+baidu_analytics: 8fbb06de38760f18d97f63e832a5fafe
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
