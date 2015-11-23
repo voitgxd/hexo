@@ -10,13 +10,13 @@ function showTime(Counter) {
 		query.find({
 			success: function(results) {
 				if (results.length == 0) {
-					var content = $(document.getElementById(url)).text() + ': 0';
+					var content = $(document.getElementById(url)).text() + ' 0';
 					$(document.getElementById(url)).text(content);
 					return;
 				}
 				for (var i = 0; i < results.length; i++) {
 					var object = results[i];
-					var content = $(document.getElementById(url)).text() + ': ' + object.get('count');
+					var content = $(document.getElementById(url)).text() + ' ' + object.get('count');
 					$(document.getElementById(url)).text(content);
 				}
 			},
@@ -42,7 +42,7 @@ function addCount(Counter) {
 				counter.increment("count");
 				counter.save(null, {
 					success: function(counter) {
-						var content = $(document.getElementById(url)).text() + ': ' + counter.get('count');
+						var content = $(document.getElementById(url)).text() + ' ' + counter.get('count');
 						$(document.getElementById(url)).text(content);
 					},
 					error: function(counter, error) {
@@ -57,7 +57,7 @@ function addCount(Counter) {
 				newcounter.save(null, {
 					success: function(newcounter) {
 					    console.log("newcounter.get('count')="+newcounter.get('count'));
-						var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('count');
+						var content = $(document.getElementById(url)).text() + ' ' + newcounter.get('count');
 						$(document.getElementById(url)).text(content);
 					},
 					error: function(newcounter, error) {
