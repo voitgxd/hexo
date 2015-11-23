@@ -11,9 +11,12 @@ if __name__ == "__main__":
 		os.system("hexo clean & (hexo generate) & (hexo deploy)")
 		inputCo = input('backup source to git? y/n : ')
 		if inputCo == "y":
-			os.system("git add -A")
+			os.system("git checkout home")
+			os.system("git add --all")
 			os.system('git commit -m "backup"')
-			os.system("git push origin master")
+			os.system("git push home")
+			os.system("git checkout master")
+			os.system("git merge home")
 		else:
 			print("not backup")
 		print("commit success")
