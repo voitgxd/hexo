@@ -3,7 +3,7 @@ date: 2015-11-18 16:57:18
 tags: Hexo
 categories: Hexo
 ---
-![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/4845745_161629814000_ok.jpg)
+![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/hexo-back.jpg)
 
 Hexo换机必备，越编越懒，留着备拷
 

@@ -40,6 +40,9 @@ leancloud_visitors:
   app_id: Mxpp9ybshJ1i7wN4mYzQyfrj
   app_key: WSfWJrUgPyhBUmm4eM6Ngtkt
 
+# baidu
+baidu_analytics: 8fbb06de38760f18d97f63e832a5fafe
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com

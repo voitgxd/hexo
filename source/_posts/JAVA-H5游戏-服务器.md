@@ -1,10 +1,10 @@
-title: JAVA-H5游戏-服务器
+title: Java-H5游戏-服务器
 date: 2015-11-20 19:05:32
 tags: [java,h5]
 categories: java
 ---
 
-![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/zhpmh.png)
+![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/zhpmh-server.png)
 
 为了应付 [甄嬛传](http://z.8864.com/) 手游的发布，上层建筑下命令了，宣传必须要到位，必须要向当前的流量大户靠近，比如某鹅厂的某个圈子。于是乎，身处的游戏公司理所当然的就造出了这么个游戏，[“甄嬛拍卖会”](http://games.huobaoyx.com/h5/apps/13326/auctioneerSalls/index.html)，于是乎，某某猿就开始为其折腾。
 
