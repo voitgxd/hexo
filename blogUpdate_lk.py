@@ -14,7 +14,6 @@ if __name__ == "__main__":
 			os.system("git checkout lk")
 			os.system("git add --all")
 			os.system('git commit -m "backup"')
-			os.system("git push lk")
 			os.system("git checkout master")
 			os.system("git merge lk")
 		else:
