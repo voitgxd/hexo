@@ -16,7 +16,7 @@ if __name__ == "__main__":
 			os.system('git commit -m "backup"')
 			os.system("git checkout master")
 			os.system("git merge home")
-			os.system("git push orgin master")
+			os.system("git push origin master")
 		else:
 			print("not backup")
 		print("commit success")
