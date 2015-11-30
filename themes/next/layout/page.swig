@@ -34,9 +34,15 @@
         <div class="category-all">
           {{ list_categories() }}
         </div>
-      </div>
+      </div>	
     {% else %}
       {{ page.content }}
+	  {% if page.type === 'about' %}
+		{% if theme.baidu_map.enable %}
+			<blockquote class="blockquote-center"><div id="map" style="height:350px;"></div></blockquote>
+			{% include '_scripts/baidu-map.swig' %}
+		{% endif %}
+	  {% endif %}
     {% endif %}
   </div>
 

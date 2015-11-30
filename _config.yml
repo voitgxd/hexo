@@ -39,6 +39,11 @@ leancloud_visitors:
   enable: true
   app_id: Mxpp9ybshJ1i7wN4mYzQyfrj
   app_key: WSfWJrUgPyhBUmm4eM6Ngtkt
+ 
+#百度地图
+baidu_map:
+  enable: true
+  app_key: yAVGv9FwdGkSW4a60U6xcxLZ
 
 # baidu
 baidu_analytics: 8fbb06de38760f18d97f63e832a5fafe
