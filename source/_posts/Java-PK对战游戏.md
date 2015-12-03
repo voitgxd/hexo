@@ -7,6 +7,8 @@ categories: java
 
 提到实时pvp对战，大多都是使用相关的游戏服务器框架实现的，这篇文章就来告诉你如何使用纯java开发一个支持实时pk对战的web服务器。
 
+<!--more-->
+
 ### 数据结构
 
 ![enter image description here](http://7xnq6l.com1.z0.glb.clouddn.com/pk_controller.png)
