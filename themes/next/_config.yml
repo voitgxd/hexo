@@ -34,7 +34,7 @@ keywords: "Hexo,next"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: http://voitgxd.com/atom.xml
 
 # Custom Logo.
 # !!Only available for Default Scheme currently.
