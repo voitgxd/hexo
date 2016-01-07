@@ -1,4 +1,4 @@
-title: "Guava-Collection'"
+title: "Guava-Collection"
 date: 2016-01-07 16:07:56
 tags: [java,guava]
 categories: Guava
