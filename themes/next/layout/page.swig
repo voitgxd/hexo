@@ -37,6 +37,33 @@
       </div>	
     {% else %}
       {{ page.content }}
+	  {% if page.type === 'guestbook' %}
+		{% if theme.chatbox.enable %}
+			{% include '_scripts/chatbox.swig' %}
+			<div class="socketchatbox-page">
+				<div id='socketchatbox-top'>
+					<div id='socketchatbox-username'></div>
+					<div id='socketchatbox-showHideChatbox'>↓</div>
+				</div>
+				<div id='socketchatbox-body'>
+					<div class="socketchatbox-chatArea">
+						<ul class="socketchatbox-messages"></ul>
+					</div>
+
+					<form id="socketchatbox-sendMedia">
+						<div>
+							<label class="socketchatbox-filebutton">
+								Drop file above to send
+								<input type="file" id="socketchatbox-imagefile" accept="image/*">
+							</label>
+						</div>
+					</form>       
+
+					<input class="socketchatbox-inputMessage" placeholder="Type here..."/>
+				</div>
+			</div>
+		{% endif %}
+	  {% endif %}
 	  {% if page.type === 'about' %}
 		{% if theme.baidu_map.enable %}
 			<blockquote class="blockquote-center"><div id="map" style="height:350px;"></div></blockquote>

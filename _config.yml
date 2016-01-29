@@ -45,6 +45,10 @@ leancloud_visitors:
 baidu_map:
   enable: true
   app_key: yAVGv9FwdGkSW4a60U6xcxLZ
+  
+# chatbox
+chatbox:
+  enable: true
 
 # baidu
 baidu_analytics: 8fbb06de38760f18d97f63e832a5fafe
