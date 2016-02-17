@@ -4,7 +4,7 @@ tags: [java,Lombok,maven]
 categories: java
 ---
 一个强大的项目[Lombok](https://projectlombok.org/)。
-好的项目在于提高效率，减少重复劳动，一个个优秀的项目前赴后继为之奋斗，Spring Framework的格言就是减少JEE的复杂度。EJB v3致力于减少样板代码，Lombok也是其中之一。
+好的项目在于提高效率，减少重复劳动，一个个优秀的项目前赴后继为之奋斗，Spring Framework的格言就是减少JEE的复杂度，EJB v3致力于减少样板代码，Lombok也是其中之一。
 
 <!--more-->
 
